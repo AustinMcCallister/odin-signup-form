@@ -50,6 +50,22 @@ body {
   box-shadow: 0 0 15px -2px #4C566A;
 }
 
+.logo {
+  color: #D8DEE9;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 0.88;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: .25em;
+}
+
+.logo > img {
+  margin-right: .2em;
+}
+
 .signup-container {
   display: flex;
   flex-direction: column;
