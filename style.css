@@ -40,14 +40,14 @@ body {
 
 .image-container {
   background-image: url("./img/nord_rainbow.jpg");
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto 1200px;
   background-color: #2E3440;
   width: 30%;
   height: 100%;
   flex-shrink: 0;
-  box-shadow: 1px 0 10px #4C566A;
+  box-shadow: 0 0 15px -2px #4C566A;
 }
 
 .signup-container {
@@ -60,26 +60,98 @@ body {
 }
 
 .form-container {
-  background-color: #eceff4;
+  background-color: #ECEFF4;
   display: flex;
+  flex-direction: column;
   border: 0px solid;
   border-radius: 2em;
+  box-shadow: 0 0 15px -5px #4C566A;
   width: 80%;
   padding: 2.5em;
+  margin: auto 0;
+}
+
+.info-box {
+  font-weight: bold;
+  font-size: 1.2em;
+  max-width: 32em;
+  margin-bottom: 2.5em;
 }
 
 form label {
+  color: #4C566A;
   font-weight: bold;
   display: block;
+  margin-bottom: .25em;
+}
+
+label > abbr {
+  color: #BF616A;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .form-section {
   display: flex;
+  flex-wrap: wrap;
   padding: .5em 0;
 }
 
 .form-section-module {
-  margin-right: 1em;
+  margin: .5em 2em 0 0;
+}
+
+.form-section-module > input {
+  color: #4C566A;
+  font-weight: bold;
+  width: 18em;
+  height: 2.2em;
+  background-color: #E5E9F0;
+  border: 2px solid #D8DEE9;
+  border-radius: .5em;
+}
+
+.form-section-module > input:hover {
+  box-shadow: 0 0 15px -9px #4C566A;
+}
+
+.form-section-module > input:focus {
+  border-color: #81A1C1;
+  box-shadow: 0 0 15px -9px #4C566A;
+}
+
+.form-section-module > input:invalid:not(:focus) {
+  border-color: #BF616A;
+}
+
+.form-section-module > input:valid:not(:focus) {
+  border-color: #A3BE8C;
+}
+
+.signup-button-container {
+  margin-top: 2em;
+}
+
+.signup-button-container button {
+  color: #ECEFF4;
+  background-color: #5E81AC;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 0 solid;
+  border-radius: .5em;
+  box-shadow: 0 0 15px -5px #4C566A;
+  padding: .5em 2em;
+}
+
+.signup-button-container button:hover {
+  background-color: #81A1C1;
+}
+
+.signup-button-container button:active {
+  background-color: #5E81AC;
 }
 
 .footer {
@@ -88,8 +160,12 @@ form label {
   display: flex;
   font-size: 1.125em;
   padding: 0.8888888888888888em;
-  margin-top: auto;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.footer-text {
+  position: relative;
+  right: 20%;
 }
