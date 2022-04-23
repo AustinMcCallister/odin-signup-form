@@ -19,50 +19,78 @@
 
     </div>
     <div class="signup-container">
-      <div class="info-box">
-
-      </div>
       <div class="form-container">
-        <form>
+        <div class="info-box">
+          This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams.
+          <br>
+          Sign up <em>now</em> to get started.
+          <br>
+          <br>
+          You <em>know</em> you want to.
+        </div>
+        <form action="#" method="post" id="form">
+          <legend>Let's do this!</legend>
           <div class="form-section">
             <div class="form-section-module">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName">
+              <label class="unselectable" for="firstName">
+                First Name
+                <abbr title="required" aria-label="required">*</abbr>
+              </label>
+              <input type="text" id="firstName" name="firstName" required>
             </div>
-            <div>
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName">
+            <div class="form-section-module">
+              <label class="unselectable" for="lastName">
+                Last Name
+                <abbr title="required" aria-label="required">*</abbr>
+              </label>
+              <input type="text" id="lastName" name="lastName" required>
             </div>
           </div>
           <div class="form-section">
             <div class="form-section-module">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+              <label class="unselectable" for="email">
+                Email
+                <abbr title="required" aria-label="required">*</abbr>
+              </label>
+              <input type="email" id="email" name="email" required>
             </div>
-            <div>
-              <label for="phoneNumber">Phone Number</label>
-              <input type="tel" id="phoneNumber" name="phoneNumber">
+            <div class="form-section-module">
+              <label class="unselectable" for="phoneNumber">
+                Phone Number
+              </label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
           </div>
           <div class="form-section">
             <div class="form-section-module">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password">
+              <label class="unselectable" for="password">
+                Password
+                <abbr title="required" aria-label="required">*</abbr>
+              </label>
+              <input type="password" id="password" name="password" required>
             </div>
-            <div>
-              <label for="confirmPassword">Confirm Password</label>
-              <input type="password" id="confirmPassword" name="">
+            <div class="form-section-module">
+              <label class="unselectable" for="confirmPassword">
+                Confirm Password
+                <abbr title="required" aria-label="required">*</abbr>
+              </label>
+              <input type="password" id="confirmPassword" name="" required>
             </div>
           </div>
         </form>
-      </div>
-      <div class="signup-button-container">
+        <div class="signup-button-container">
+          <button class="unselectable" type="submit" form="form" value="Submit">Create Account</button>
 
+        </div>
+      </div>
+      <div class="footer unselectable">
+        <div class="footer-text">
+          Copyright © Austin McCallister 2022
+        </div>
       </div>
     </div>
   </div>
-  <div class="footer unselectable">
-    Copyright © Austin McCallister 2022
-  </div>
+
 </body>
 </html>
