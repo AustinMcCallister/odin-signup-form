@@ -132,6 +132,8 @@ legend {
 }
 
 .signup-button-container {
+  display: flex;
+  align-items: center;
   margin-top: 2em;
 }
 
@@ -146,12 +148,24 @@ legend {
   padding: .5em 2em;
 }
 
-.signup-button-container button:hover {
+.signup-button-container button:hover:not(:active) {
   background-color: #81A1C1;
 }
 
-.signup-button-container button:active {
-  background-color: #5E81AC;
+.signup-button-container > div {
+  font-size: .9em;
+  font-weight: bold;
+  margin-left: 1.5em;
+}
+
+.signup-button-container a {
+  color: #5E81AC;
+  text-decoration: none;
+}
+
+.signup-button-container a:hover:not(:active) {
+  color: #81A1C1;
+  text-decoration: none;
 }
 
 .footer {
