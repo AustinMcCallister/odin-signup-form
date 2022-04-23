@@ -139,11 +139,11 @@ legend {
   box-shadow: 0 0 15px -9px #4C566A;
 }
 
-.form-section-module > input:invalid:not(:focus) {
+.form-section-module > input.error:not(:focus) {
   border-color: #BF616A;
 }
 
-.form-section-module > input:valid:not(:focus) {
+.form-section-module > input:valid:not(:focus, :placeholder-shown) {
   border-color: #A3BE8C;
 }
 
