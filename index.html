@@ -53,13 +53,15 @@
                 Email
                 <abbr title="required" aria-label="required">*</abbr>
               </label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email"
+                     placeholder="example@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
             </div>
             <div class="form-section-module">
               <label class="unselectable" for="phoneNumber">
                 Phone Number
               </label>
-              <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <input type="tel" id="phoneNumber" name="phoneNumber"
+                     placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
           </div>
           <div class="form-section">
@@ -94,6 +96,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>
