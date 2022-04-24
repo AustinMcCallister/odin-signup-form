@@ -2,10 +2,16 @@ const inputs = document.querySelectorAll("input, select, textarea");
 
 inputs.forEach(input => {
   input.addEventListener("invalid", () => {
+    input.classList.add("error");
+  }, false);
+  input.addEventListener("change", () => {
+    if (input.checkValidity()) {
+      input.classList.remove("error");
+    }
+    else {
       input.classList.add("error");
-    },
-    false
-  );
+    }
+  });
 });
 
 let password = document.getElementById("password")
